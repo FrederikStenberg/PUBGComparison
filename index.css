@@ -1,27 +1,20 @@
-@import url('https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css');
+@import url('https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css');
 
-/* The heart of the matter */
-.btn-matrix > .btn:nth-child(3n+4) {
-  clear: left;
-  margin-left: 0;
-}
-.btn-matrix > .btn:nth-child(n+4) {
-  margin-top: -1px;
-}
-.btn-matrix > .btn:first-child {
-  border-bottom-left-radius: 0;
-}
-.btn-matrix > .btn:nth-child(3) {
-  border-top-right-radius: 4px !important;
-}
-.btn-matrix > .btn:nth-last-child(3) {
-  border-bottom-left-radius: 4px !important;
-}
-.btn-matrix > .btn:last-child {
-  border-top-right-radius: 0;
+.btn-group {
+    margin-top: 5px;
 }
 
-/* Decorations */
-.btn-matrix {
-  margin: 20px;
+body {
+    background-image: url(images/pubgbg.png);
+    background-size: cover;
+}
+
+input[type=text] {
+    width: 50%;
+    margin-top: 20%;
+    border-radius: 5px;
+}
+
+.text-center > img {
+    margin-top: 50px;
 }
