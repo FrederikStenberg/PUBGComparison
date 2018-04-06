@@ -4,13 +4,23 @@
     margin-top: 5px;
 }
 
+.btn-group button:focus {
+    outline:none !important;
+    box-shadow: none !important;
+    background-color: lightslategray;
+}
+
+.btn-group button:active {
+    background-color: lightslategray;
+}
+
 body {
     background-image: url(images/pubgbg.png);
     background-size: cover;
 }
 
 input[type=text] {
-    width: 50%;
+    width: 25%;
     margin-top: 20%;
     border-radius: 5px;
 }
