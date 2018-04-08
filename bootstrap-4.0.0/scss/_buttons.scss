@@ -11,7 +11,7 @@
   white-space: nowrap;
   vertical-align: middle;
   user-select: none;
-  border: $btn-border-width solid transparent;
+  border: 0 none;
   @include button-size($btn-padding-y, $btn-padding-x, $font-size-base, $btn-line-height, $btn-border-radius);
   @include transition($btn-transition);
 
@@ -23,7 +23,7 @@
   &:focus,
   &.focus {
     outline: 0;
-    box-shadow: $btn-focus-box-shadow;
+    box-shadow: 0;
   }
 
   // Disabled comes first so active can properly restyle
@@ -41,10 +41,10 @@
   &:not(:disabled):not(.disabled):active,
   &:not(:disabled):not(.disabled).active {
     background-image: none;
-    @include box-shadow($btn-active-box-shadow);
+    @include box-shadow(none);
 
     &:focus {
-      @include box-shadow($btn-focus-box-shadow, $btn-active-box-shadow);
+      @include box-shadow(none, none);
     }
   }
 }
@@ -67,7 +67,7 @@ fieldset:disabled a.btn {
 }
 
 @each $color, $value in $theme-colors {
-  .btn-outline-#{$color} {
+  .btn-outline-#{none} {
     @include button-outline-variant($value);
   }
 }

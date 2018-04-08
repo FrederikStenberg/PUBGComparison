@@ -2,16 +2,12 @@
 
 .btn-group {
     margin-top: 5px;
+    background-color: yellow;
 }
 
-.btn-group button:focus {
-    outline:none !important;
-    box-shadow: none !important;
-    background-color: lightslategray;
-}
-
-.btn-group button:active {
-    background-color: lightslategray;
+.btn:focus, .btn:active:focus, .btn.active:focus, .btn btn-secondary {
+    margin-bottom: 150%;
+    outline: 0 none;
 }
 
 body {
@@ -23,8 +19,14 @@ input[type=text] {
     width: 25%;
     margin-top: 20%;
     border-radius: 5px;
+    outline: 0 none;
 }
 
 .text-center > img {
     margin-top: 50px;
+}
+
+label.btn.focus{
+    outline: 0 none;
+    box-shadow:none;
 }

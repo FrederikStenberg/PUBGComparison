@@ -51,12 +51,12 @@
   // Reset rounded corners
   > .btn:not(:last-child):not(.dropdown-toggle),
   > .btn-group:not(:last-child) > .btn {
-    @include border-right-radius(0);
+    @include border-right-radius(none);
   }
 
   > .btn:not(:first-child),
   > .btn-group:not(:first-child) > .btn {
-    @include border-left-radius(0);
+    @include border-left-radius(none);
   }
 }
 
@@ -95,7 +95,7 @@
 // The clickable button for toggling the menu
 // Set the same inset shadow as the :active state
 .btn-group.show .dropdown-toggle {
-  @include box-shadow($btn-active-box-shadow);
+  @include box-shadow(none);
 
   // Show no shadow for `.btn-link` since it has no other button styles.
   &.btn-link {
@@ -129,12 +129,12 @@
   // Reset rounded corners
   > .btn:not(:last-child):not(.dropdown-toggle),
   > .btn-group:not(:last-child) > .btn {
-    @include border-bottom-radius(0);
+    @include border-bottom-radius(none);
   }
 
   > .btn:not(:first-child),
   > .btn-group:not(:first-child) > .btn {
-    @include border-top-radius(0);
+    @include border-top-radius(none);
   }
 }
 
