@@ -1,8 +1,10 @@
 $(document).ready(function() {
     
     var selectedRegion; 
+    var player1;
+    var player2;
     
-    $('#searchplayer1').keypress(function(e) {
+    $(document).keypress(function(e) {
     var keycode = (e.keyCode ? e.keyCode : e.which);
         if(keycode == '13') { 
             if($('#option1').is(':checked')) {
@@ -22,8 +24,8 @@ $(document).ready(function() {
             } else if ($('#option8').is(':checked')) {
                 selectedRegion = "pc-as";
             }
-            alert(selectedRegion);
-            var thisisstring = this.value;
+            var player1 = document.getElementById('searchplayer1').value;
+            var player2 = document.getElementById('searchplayer2').value;
         }
     });
 });

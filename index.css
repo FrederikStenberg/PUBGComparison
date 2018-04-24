@@ -17,13 +17,20 @@ body {
 
 input[type=text] {
     width: 385px;
-    margin-top: 20%;
     border-radius: 5px;
     outline: 0 none;
 }
 
-.text-center > img {
-    margin-top: 50px;
+.text-center {
+    position: absolute;
+}
+
+#search1 {
+    float: left;
+}
+
+#search2 {
+    float: left;
 }
 
 label.btn.focus{
