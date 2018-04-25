@@ -1,28 +1,32 @@
 @import url('https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css');
 
-.btn-group {
-    margin-top: 5px;
-    background-color: yellow;
-}
-
-.btn:focus, .btn:active:focus, .btn.active:focus, .btn btn-secondary {
-    margin-bottom: 150%;
-    outline: 0 none;
-}
-
 body {
     background-image: url(images/pubgbg.png);
     background-size: cover;
 }
 
+#pubglogo {
+    margin-top: 15%;
+    width: 20%;
+    height: 20%;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 input[type=text] {
     width: 385px;
-    border-radius: 5px;
     outline: 0 none;
+    text-indent: 5px;
 }
 
 .text-center {
-    position: absolute;
+    margin: auto;
+    margin-top: 10px;
+    width: 780px;
 }
 
 #search1 {
@@ -30,10 +34,73 @@ input[type=text] {
 }
 
 #search2 {
-    float: left;
+    float: right;
 }
 
-label.btn.focus{
-    outline: 0 none;
-    box-shadow:none;
+#region1 {
+    float: left;
+    width: 200px;
 }
+
+#region2 {
+    float: left;
+    width: 200px;
+}
+
+.button {
+  display: inline-block;
+  border-radius: 20px;
+  background-color: #f6c02a;
+  border: 5px double orange;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 400px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin-top: 50px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}}
+
+.custom-dropdown {
+    position: relative;
+}
+
+.custom-dropdown select {
+    float: left;
+    background-color: #f6c02a;
+    color: #fff;
+    font-size: inherit;	
+    border: 0;
+    margin: 0;
+    width: 385px;
+    height: 30px;
+    text-indent: 5px;
+    text-overflow: '';
+}
+
