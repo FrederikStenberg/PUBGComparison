@@ -10,6 +10,14 @@ function compare() {
     player2 = document.getElementById('searchplayer2').value;
     region1 = regionElement1.options[regionElement1.selectedIndex].value;
     region2 = regionElement2.options[regionElement2.selectedIndex].value;
+    
+    var req = new XMLHttpRequest();
+    var url = "https://api.playbattlegrounds.com/shards/pc-eu/matches/3f7710e9-daf9-49f5-bd73-e5789c60cae5";
+
+    req.open('GET', url, true);
+    req.setRequestHeader('Authorization', 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI5Mjk1YWExMC0yYWIxLTAxMzYtZTNhNi0wOTkxMzhmZmQ5ZTEiLCJpc3MiOiJnYW1lbG9ja2VyIiwiaWF0IjoxNTI0NjU5MDg5LCJwdWIiOiJibHVlaG9sZSIsInRpdGxlIjoicHViZyIsImFwcCI6InB1YmctY29tcGFyaXNvbiIsInNjb3BlIjoiY29tbXVuaXR5IiwibGltaXQiOjEwfQ.45-CAzKJIChq3z7h-9He_dUTFOvDHzDesnvWOcS719w');
+    req.setRequestHeader('Accept', 'application/json');
+    req.send();
 };
 
 /* JS for dropdown */
