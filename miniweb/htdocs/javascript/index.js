@@ -4,6 +4,7 @@ var player1ID;
 var player2ID;
 var region1;
 var region2;
+var APIkey = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI5Mjk1YWExMC0yYWIxLTAxMzYtZTNhNi0wOTkxMzhmZmQ5ZTEiLCJpc3MiOiJnYW1lbG9ja2VyIiwiaWF0IjoxNTI0NjU5MDg5LCJwdWIiOiJibHVlaG9sZSIsInRpdGxlIjoicHViZyIsImFwcCI6InB1YmctY29tcGFyaXNvbiIsInNjb3BlIjoiY29tbXVuaXR5IiwibGltaXQiOjEwfQ.45-CAzKJIChq3z7h-9He_dUTFOvDHzDesnvWOcS719w";
 
 function compare() {
     var regionElement1 = document.getElementById('regionplayer1');
@@ -15,16 +16,17 @@ function compare() {
     
     var req = new XMLHttpRequest();
     var req2 = new XMLHttpRequest();
-    //var url = "https://api.playbattlegrounds.com/shards/" + region1 + "/players?filter[playerNames]=" + player1;
-    var url = "https://api.playbattlegrounds.com/shards/" + region1 + "/players/" + player1ID + "/seasons/division.bro.official.2018-04";
-    var url2; "https://api.playbattlegrounds.com/shards/" + region2 + "/players?filter[playerNames]=" + player2;
-
+    var urlForPlayer1ID = "https://api.playbattlegrounds.com/shards/" + region1 + "/players?filter[playerNames]=" + player1;
+    //var urlForPlayer2ID = "https://api.playbattlegrounds.com/shards/" + region2 + "/players?filter[playerNames]=" + player2;
+    
     req.onreadystatechange = function() {
         if(this.readyState == 4 && this.status == 200) {
             var obj = this.responseText;
             var objJSON = JSON.parse(obj);
-            //var amountOfMatches = objJSON.data["0"].relationships.matches.data.length;
-            //sessionStorage.setItem("amountOfMatches", amountOfMatches);
+            player1ID = objJSON.data["0"].id;
+            alert(player1ID);
+            //Begin second API call to get player1 data
+            var urlForSeasonObject1 = "https://api.playbattlegrounds.com/shards/" + region1 + "/players/" + player1ID + "/seasons/division.bro.official.2018-04";
         }
     }
     
@@ -38,8 +40,8 @@ function compare() {
         }
     }*/
     
-    req.open('GET', url, true);
-    req.setRequestHeader('Authorization', 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI5Mjk1YWExMC0yYWIxLTAxMzYtZTNhNi0wOTkxMzhmZmQ5ZTEiLCJpc3MiOiJnYW1lbG9ja2VyIiwiaWF0IjoxNTI0NjU5MDg5LCJwdWIiOiJibHVlaG9sZSIsInRpdGxlIjoicHViZyIsImFwcCI6InB1YmctY29tcGFyaXNvbiIsInNjb3BlIjoiY29tbXVuaXR5IiwibGltaXQiOjEwfQ.45-CAzKJIChq3z7h-9He_dUTFOvDHzDesnvWOcS719w');
+    req.open('GET', urlForPlayer1ID, true);
+    req.setRequestHeader('Authorization', 'Bearer ' + APIkey);
     req.setRequestHeader('Accept', 'application/vnd.api+json');
     req.send();
     
@@ -47,4 +49,8 @@ function compare() {
     req2.setRequestHeader('Authorization', 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI5Mjk1YWExMC0yYWIxLTAxMzYtZTNhNi0wOTkxMzhmZmQ5ZTEiLCJpc3MiOiJnYW1lbG9ja2VyIiwiaWF0IjoxNTI0NjU5MDg5LCJwdWIiOiJibHVlaG9sZSIsInRpdGxlIjoicHViZyIsImFwcCI6InB1YmctY29tcGFyaXNvbiIsInNjb3BlIjoiY29tbXVuaXR5IiwibGltaXQiOjEwfQ.45-CAzKJIChq3z7h-9He_dUTFOvDHzDesnvWOcS719w');
     req2.setRequestHeader('Accept', 'application/vnd.api+json');
     req2.send();*/
+    
+    //var amountOfMatches = objJSON.data["0"].relationships.matches.data.length;
+    //sessionStorage.setItem("amountOfMatches", amountOfMatches);
 };
+
