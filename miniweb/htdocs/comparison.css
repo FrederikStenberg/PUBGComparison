@@ -1,3 +1,183 @@
 @import url('https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css');
 
+body {
+    background-image: url(images/pubgbg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+     
+}
+   
+    
+img.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20%;
+    vertical-align: bottom
+    }
 
+.button {
+  display: inline-block;
+  border-radius: 10px;
+  background-color: #f6c02a;
+  border: 5px double orange;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 12px;
+  padding: 20px;
+  width: 100px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin-top: 50px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+menu_item {
+    float: left;
+    background-color: #f6c02a;
+    color: #fff;
+    font-size: inherit;	
+    border: 0;
+    margin: 0;
+    width: 385px;
+    height: 30px;
+    text-indent: 5px;
+    text-overflow: '';
+}
+
+.gradient {
+background: #fceabb; /* Old browsers */
+background: -webkit-linear-gradient(left, #fceabb 0%,#f8b500 76%,#fccd4d 100%,#fbdf93 100%); /* Chrome10-25,Safari5.1-6 */
+    color:transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+#Image {
+
+    max-height: 80%;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+
+.fix{
+    position: fixed;
+    bottom:0;
+}
+
+#RowRight {
+    display: inline-block;
+  background-color: rgba(240, 140, 10,0.1);
+    position: static;
+  float:right;
+  margin-right:10%;
+  margin-left: 10%;
+}
+
+#RowLeft {
+    display: inline-block;
+  background-color: rgba(240, 140, 10,0.1);
+    position: static;
+  float:left;
+  margin-left:10%;
+  margin-right: 10%;
+}
+
+#Stats {
+    margin-top: 5%;
+  
+}
+
+#PlayerName1{
+    position: static;
+    font:bold 5pt Arial Black ;
+    /*color:#ffd11a;
+     text-shadow: 0 1px 0 #ccc,
+ 0 2px 0 #c9c9c9,
+ 0 3px 0 #bbb,
+ 0 4px 0 #b9b9b9,
+ 0 5px 0 #aaa,
+ 0 6px 1px rgba(0,0,0,.1),
+ 0 0 5px rgba(0,0,0,.1),
+ 0 1px 3px rgba(0,0,0,.3),
+ 0 3px 5px rgba(0,0,0,.2),
+ 0 5px 10px rgba(0,0,0,.25),
+ 0 10px 10px rgba(0,0,0,.2),
+ 0 20px 20px rgba(0,0,0,.15);*/
+float: left;
+    margin-left: 17%;
+
+
+}
+
+#PlayerName2{
+    position: static;
+        font:bold 5pt Arial Black;
+    /*color: #ffd11a;
+     text-shadow: 0 1px 0 #ccc,
+ 0 2px 0 #c9c9c9,
+ 0 3px 0 #bbb,
+ 0 4px 0 #b9b9b9,
+ 0 5px 0 #aaa,
+ 0 6px 1px rgba(0,0,0,.1),
+ 0 0 5px rgba(0,0,0,.1),
+ 0 1px 3px rgba(0,0,0,.3),
+ 0 3px 5px rgba(0,0,0,.2),
+ 0 5px 10px rgba(0,0,0,.25),
+ 0 10px 10px rgba(0,0,0,.2),
+ 0 20px 20px rgba(0,0,0,.15);*/
+    float: right;
+    margin-right: 17%;
+
+}
+
+#Values {
+    position: static;
+    text-align: right;
+    margin-left: 100px;
+    margin-right: 10px;
+    font:bold 15pt Lucida Sans Unicode;
+    
+}
+
+#RightCat{
+    position: static;
+    text-shadow: 0px 0px 6px rgba(255,130,46,0.7);
+    margin-top: 4%;
+    margin-left: 20px;
+    font-weight: bold;
+    font:normal 15pt Lucida Sans Unicode;
+    
+}
+
+#LeftCat{
+    position: static;
+    text-shadow: 0px 0px 6px rgba(255,130,46,0.7);
+    margin-top: 5%;
+    margin-left: 20px;
+    font-weight: bold;  
+    font:normal 15pt Lucida Sans Unicode;
+
+}
