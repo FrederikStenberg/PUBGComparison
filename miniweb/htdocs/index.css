@@ -3,6 +3,7 @@
 body {
     background-image: url(images/pubgbg.png);
     background-size: cover;
+    background-repeat: no-repeat;
 }
 
 #pubglogo {
