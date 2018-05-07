@@ -117,7 +117,6 @@ function compare() {
         }
     }
     
-    
     req.open('GET', urlForPlayer1ID, true);
     req.setRequestHeader('Authorization', 'Bearer ' + APIkey);
     req.setRequestHeader('Accept', 'application/vnd.api+json');
