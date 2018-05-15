@@ -51,7 +51,7 @@ function compare() {
             player1Top10s = obj2JSON.data.attributes.gameModeStats["duo-fpp"].top10s;
             player1LongestKillString = obj2JSON.data.attributes.gameModeStats["duo-fpp"].longestKill;
             player1LongestKill = parseFloat(player1LongestKillString).toFixed(2);
-            player1Teamkills = obj2JSON.data.attributes.gameModeStats["duo-fpp"].teamkills;
+            player1Teamkills = obj2JSON.data.attributes.gameModeStats["duo-fpp"].teamKills;
             
             //Calculate winratio
             player1Wins = obj2JSON.data.attributes.gameModeStats["duo-fpp"].wins;
@@ -102,7 +102,7 @@ function compare() {
             player2Top10s = obj4JSON.data.attributes.gameModeStats["duo-fpp"].top10s;
             player2LongestKillString = obj4JSON.data.attributes.gameModeStats["duo-fpp"].longestKill;
             player2LongestKill = parseFloat(player2LongestKillString).toFixed(2);
-            player2Teamkills = obj4JSON.data.attributes.gameModeStats["duo-fpp"].teamkills;
+            player2Teamkills = obj4JSON.data.attributes.gameModeStats["duo-fpp"].teamKills;
             
             //Calculate winratio
             player2Wins = obj4JSON.data.attributes.gameModeStats["duo-fpp"].wins;
