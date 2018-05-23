@@ -20,3 +20,12 @@ window.onload = function() {
     document.getElementById("player2Top10s").innerHTML = sessionStorage.getItem("player2Top10s");
     document.getElementById("player2LongestKill").innerHTML = sessionStorage.getItem("player2LongestKill") + "m";
 };
+
+
+function goHome() {
+    window.location.assign("index.html");
+}
+
+function goHowTo() {
+    window.location.assign("howto.html")
+}

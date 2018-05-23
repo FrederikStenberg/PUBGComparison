@@ -13,6 +13,8 @@ function compare() {
     player2 = document.getElementById('searchplayer2').value;
     region1 = regionElement1.options[regionElement1.selectedIndex].value;
     region2 = regionElement2.options[regionElement2.selectedIndex].value;
+    monthInput = document.getElementById('seasonSelector').value;
+    season;
     
     var req = new XMLHttpRequest();
     var req2 = new XMLHttpRequest();
@@ -24,15 +26,46 @@ function compare() {
     sessionStorage.setItem("playerName1", player1);
     sessionStorage.setItem("playerName2", player2);
     
+    if(monthInput == "January") {
+        season = "01";
+    } else if (monthInput == "February") {
+        season = "02";
+    } else if (monthInput == "March") {
+        season = "03";
+    } else if (monthInput == "April") {
+        season = "04";
+    } else if (monthInput == "May") {
+        season = "05";
+    } else if (monthInput == "June") {
+        season = "06";
+    } else if (monthInput == "July") {
+        season = "07";
+    } else if (monthInput == "August") {
+        season = "08";
+    } else if (monthInput == "September") {
+        season = "09";
+    } else if (monthInput == "October") {
+        season = "10";
+    } else if (monthInput == "November") {
+        season = "11";
+    } else if (monthInput == "December") {
+        season = "12";
+    }
+    
     //Getting info for Player 1
     req.onreadystatechange = function() {
+        if(req.status == 400 || req.status == 500) {
+            window.alert("Player(s) or region not found.");
+        } else if(req.status == 429) {
+            window.alert("Maximum API requests reached. Please wait a minute and try again.");
+        }
         if(this.readyState == 4 && this.status == 200) {
             var obj = this.responseText;
             var objJSON = JSON.parse(obj);
             player1ID = objJSON.data["0"].id;
             
             //Begin second API call to get player1 data
-            var urlForSeasonObject1 = "https://api.playbattlegrounds.com/shards/" + region1 + "/players/" + player1ID + "/seasons/division.bro.official.2018-05";
+            var urlForSeasonObject1 = "https://api.playbattlegrounds.com/shards/" + region1 + "/players/" + player1ID + "/seasons/division.bro.official.2018-" + season;
             req2.open('GET', urlForSeasonObject1, true);
             req2.setRequestHeader('Authorization', 'Bearer ' + APIkey);
             req2.setRequestHeader('Accept', 'application/vnd.api+json');
@@ -76,14 +109,14 @@ function compare() {
         }
     }  
     //Getting info on Player 2
-    req3.onreadystatechange = function() {
+    req3.onreadystatechange = function() {     
         if(this.readyState == 4 && this.status == 200) {
             var obj3 = this.responseText;
             var obj3JSON = JSON.parse(obj3);
             player2ID = obj3JSON.data["0"].id;
                                 
             //Begin second API call to get player2 data
-            var urlForSeasonObject1 = "https://api.playbattlegrounds.com/shards/" + region2 + "/players/" + player2ID + "/seasons/division.bro.official.2018-05";
+            var urlForSeasonObject1 = "https://api.playbattlegrounds.com/shards/" + region2 + "/players/" + player2ID + "/seasons/division.bro.official.2018-" + season;
             req4.open('GET', urlForSeasonObject1, true);
             req4.setRequestHeader('Authorization', 'Bearer ' + APIkey);
             req4.setRequestHeader('Accept', 'application/vnd.api+json');
@@ -119,7 +152,7 @@ function compare() {
             sessionStorage.setItem("player2Teamkills", player2Teamkills);
             sessionStorage.setItem("player2WinRatio", player2WinRatio);
             
-            window.location.replace("comparison.html");
+            window.location.assign("comparison.html");
         }
     }
     
@@ -129,3 +162,10 @@ function compare() {
     req.send();
 };
 
+function goHome() {
+    window.location.assign("index.html");
+}
+
+function goHowTo() {
+    window.location.assign("howto.html")
+}

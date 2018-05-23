@@ -1,0 +1,99 @@
+@import url('https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css');
+
+body {
+    background-image: url(images/pubgbg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.nav {
+    width: 60px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: inline-block;
+    position: absolute;
+    background: #f7cb51;
+}
+
+.nav li {
+    cursor: pointer;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    font-size: 18px;
+    color: #ffffff;
+}
+
+.nav li div,
+.nav li i {
+  position: absolute;
+  text-align: center;
+  animation-duration: 0.34s;
+}
+.nav li div {
+  margin-left: 40px;
+  text-align: center;
+  width: 160px;    
+}
+.nav li i {
+  font-size: 2em;
+  line-height: 60px;
+  width: 60px;
+  z-index: 9;
+  background: #f7cb51;
+}
+.nav li div {
+  display: none;
+  z-index: 1;
+  background: #f7cb51;
+}
+
+.nav li:hover > div {
+  display: inline-block;
+}
+.nav li:hover i {
+  background: #f7cb51;
+}
+
+.pubgIcon {
+    background: url('images/vectorlogo.png');
+    height: 30px;
+    width: 50px;
+    bottom: 15px;
+    left: 5px;
+    position: absolute;
+}
+
+#HowToUse {
+    margin: auto;
+    margin-top: 10%;
+    width: 50%;
+    border: 3px solid #f7cb51;
+    border-radius: 25px;
+    background-color: #f7cb51;
+    padding: 10px;
+}
+
+#HowToUse h1 {
+    color: white;
+}
+
+#HowToUse p {
+    color: white;
+}
+
+#HowToUse ul {
+    color: white;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
