@@ -1,101 +1,101 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
-    <link rel="stylesheet" type="text/css" href="comparison.css">
-    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
-    <script type="text/javascript" src="javascript/comparison.js"></script>
-      
-    <!-- Add icon library -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-      
-    <title>PUBG Comparison Tool</title>
-  </head>
-  <body>
-      
+   <head>
+      <!-- Required meta tags -->
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <!-- Bootstrap CSS -->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+      <link rel="stylesheet" type="text/css" href="comparison.css">
+      <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+      <script type="text/javascript" src="javascript/comparison.js"></script>
+      <!-- Add icon library -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <title>PUBG Comparison Tool</title>
+   </head>
+   <body>
+       
+      <!-- Create navigation bar -->
       <ul class="nav">
-   <li>
-    <i class="fa fa-home" onclick="goHome();"></i> 
-    <div class="animated bounceInLeft" onclick="goHome();">HOME</div>
-   </li>  
-   <li>
-    <i class="fa fa-info" onclick="goHowTo();"></i>
-    <div class="animated bounceInLeft" onclick="goHowTo();">HOW TO</div>
-   </li>
-   <li>
-    <img src="images/vectorlogo.png" class="pubgIcon center">
-    </li>
-</ul>
-      
+         <li>
+            <i class="fa fa-home" onclick="goHome();"></i> 
+            <div class="animated bounceInLeft" onclick="goHome();">HOME</div>
+         </li>
+         <li>
+            <i class="fa fa-info" onclick="goHowTo();"></i>
+            <div class="animated bounceInLeft" onclick="goHowTo();">HOW TO</div>
+         </li>
+         <li>
+            <img src="images/vectorlogo.png" class="pubgIcon center">
+         </li>
+      </ul>
+
+      <!-- Insert PUBG logo -->
       <img src="images/PUBG-lg.png" alt="PUBG" id="pubglogo" class="center">
-<div id="Stats">
-   <div id="RowRight">
-       <div id="PlayerName2">
-            <p style="font-size: 29px" id="PlayerName2Session"><span class="gradient">Player 2</span></p>
-       </div>
-       <div id="row">
-        <div class=" col-lg- flex-row" id="RightCat">
-                <p> Kills</p>
-                <p> Assists</p>
-                <p> Win Ratio</p>
-                <p> Most Kills</p>
-                <p> Suicides</p>
-                <p> Teamkills</p>
-                <p> Top 10's</p>
-                <p> Longest Kill</p>
-        </div>
-        <div id="Values">
-            <div class="col">
-                <p  ></p>
-                <p id="player2Kills"> 93213</p>
-                <p id="player2Assists"> 3123</p>
-                <p id="player2WinRatio"> 3.2</p>
-                <p id="player2MostKills"> 23</p>
-                <p id="player2Suicides"> 0</p>
-                <p id="player2Teamkills"> 13</p>
-                <p id="player2Top10s"> 143</p>
-                <p id="player2LongestKill"> 403 yards</p>
+       
+      <!--Show stats -->
+      <div id="Stats">
+         <div id="RowRight">
+            <div id="PlayerName2">
+               <p style="font-size: 29px" id="PlayerName2Session"><span class="gradient">Player 2</span></p>
             </div>
-        </div>
-    </div>
-</div>
-    <div id="RowLeft">
-         <div id="PlayerName1">
-            <p style="font-size: 29px" id="PlayerName1Session"><span class="gradient">Player 1</span></p>
+            <div id="row">
+               <div class=" col-lg- flex-row" id="RightCat">
+                  <p> Kills</p>
+                  <p> Assists</p>
+                  <p> Win Ratio</p>
+                  <p> Most Kills</p>
+                  <p> Suicides</p>
+                  <p> Teamkills</p>
+                  <p> Top 10's</p>
+                  <p> Longest Kill</p>
+               </div>
+               <div id="Values">
+                  <div class="col">
+                     <p  ></p>
+                     <p id="player2Kills"> 93213</p>
+                     <p id="player2Assists"> 3123</p>
+                     <p id="player2WinRatio"> 3.2</p>
+                     <p id="player2MostKills"> 23</p>
+                     <p id="player2Suicides"> 0</p>
+                     <p id="player2Teamkills"> 13</p>
+                     <p id="player2Top10s"> 143</p>
+                     <p id="player2LongestKill"> 403 yards</p>
+                  </div>
+               </div>
             </div>
-        <div class="row">
-            <div class=" col-lg- flex-row" id="LeftCat">
-                <p> Kills</p>
-                <p> Assists</p>
-                <p> Win Ratio</p>
-                <p> Most Kills</p>
-                <p> Suicides</p>
-                <p> Teamkills</p>
-                <p> Top 10's</p>
-                <p> Longest Kill</p>
+         </div>
+         <div id="RowLeft">
+            <div id="PlayerName1">
+               <p style="font-size: 29px" id="PlayerName1Session"><span class="gradient">Player 1</span></p>
             </div>
-         <div id="Values">
-            <div class="col">
-                <p style="font-size: 29px;"></p>
-                <p id="player1Kills"> 93213</p>
-                <p id="player1Assists"> 3123</p>
-                <p id="player1WinRatio"> 3.2</p>
-                <p id="player1MostKills"> 23</p>
-                <p id="player1Suicides"> 0</p>
-                <p id="player1Teamkills"> 13</p>
-                <p id="player1Top10s"> 143</p>
-                <p id="player1LongestKill"> 403 yards</p>
-                </div>
+            <div class="row">
+               <div class=" col-lg- flex-row" id="LeftCat">
+                  <p> Kills</p>
+                  <p> Assists</p>
+                  <p> Win Ratio</p>
+                  <p> Most Kills</p>
+                  <p> Suicides</p>
+                  <p> Teamkills</p>
+                  <p> Top 10's</p>
+                  <p> Longest Kill</p>
+               </div>
+               <div id="Values">
+                  <div class="col">
+                     <p style="font-size: 29px;"></p>
+                     <p id="player1Kills"> 93213</p>
+                     <p id="player1Assists"> 3123</p>
+                     <p id="player1WinRatio"> 3.2</p>
+                     <p id="player1MostKills"> 23</p>
+                     <p id="player1Suicides"> 0</p>
+                     <p id="player1Teamkills"> 13</p>
+                     <p id="player1Top10s"> 143</p>
+                     <p id="player1LongestKill"> 403 yards</p>
+                  </div>
+               </div>
             </div>
-        </div>
-    </div> 
+         </div>
       </div>
       <img src="images/pubg_player3.png"  id="Image" class ="fix"/>
-    </body>
+   </body>
 </html>

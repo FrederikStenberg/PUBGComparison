@@ -1,3 +1,4 @@
+//Call all the information stored by sessionStorage to this page
 window.onload = function() {
     document.getElementById("PlayerName1Session").innerHTML = sessionStorage.getItem("playerName1");
     document.getElementById("PlayerName2Session").innerHTML = sessionStorage.getItem("playerName2");
@@ -21,11 +22,12 @@ window.onload = function() {
     document.getElementById("player2LongestKill").innerHTML = sessionStorage.getItem("player2LongestKill") + "m";
 };
 
-
+//Change page to index.html
 function goHome() {
     window.location.assign("index.html");
 }
 
+//Change page to howto.html
 function goHowTo() {
     window.location.assign("howto.html")
 }

@@ -1,55 +1,55 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
-    <link rel="stylesheet" type="text/css" href="howto.css">
-    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
-    <script type="text/javascript" src="javascript/index.js"></script>
-    
-    <!-- Add icon library -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>PUBG Comparison Tool</title>
-  </head>
-  <body>  
-      
-<ul class="nav">
-   <li>
-    <i class="fa fa-home" onclick="goHome();"></i> 
-    <div class="animated bounceInLeft" onclick="goHome();">HOME</div>
-   </li>  
-   <li>
-    <i class="fa fa-info" onclick="goHowTo();"></i>
-    <div class="animated bounceInLeft" onclick="goHowTo();">HOW TO</div>
-   </li>
-    <li>
-    <img src="images/vectorlogo.png" class="pubgIcon center">
-    </li>
-</ul>
-
-      <div id="HowToUse">
-      <h1>How to use</h1>
-      <p>In order to use the PUBG comparer, insert a name into each of the text boxes on the front page. For both players, select their respected region using the dropdown menu. To proceed click the "Compare" button and wait for the page to find your desired statistics. </p>
-      <p class="bold">Example:</p>
-      <ul class="bold">
-       <li>Insert "shroud" into the first player textbox.</li>
-       <li>Select "North America" as that players region.</li>
-       <li>Insert "lyxrN" into the second player textbox.</li>
-       <li>Select "Europe" as  that players region.</li>
-       <li>Use the "Compare" button to view the comparison.</li>
+   <head>
+      <!-- Required meta tags -->
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <!-- Bootstrap CSS -->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+      <link rel="stylesheet" type="text/css" href="howto.css">
+      <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+      <script type="text/javascript" src="javascript/index.js"></script>
+      <!-- Add icon library -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <title>PUBG Comparison Tool</title>
+   </head>
+   <body>
+       
+      <!-- Create navigation bar -->
+      <ul class="nav">
+         <li>
+            <i class="fa fa-home" onclick="goHome();"></i> 
+            <div class="animated bounceInLeft" onclick="goHome();">HOME</div>
+         </li>
+         <li>
+            <i class="fa fa-info" onclick="goHowTo();"></i>
+            <div class="animated bounceInLeft" onclick="goHowTo();">HOW TO</div>
+         </li>
+         <li>
+            <img src="images/vectorlogo.png" class="pubgIcon center">
+         </li>
       </ul>
-      <p>*Note that the player names are CASE SENSITIVE.</p>
+       
+      <!-- How to use text section -->
+      <div id="HowToUse">
+         <h1>How to use</h1>
+         <p>In order to use the PUBG comparer, insert a name into each of the text boxes on the front page.* For both players, select their respected region using the dropdown menu. Finally select for what month you would like to see the stats.** To proceed click the "Compare" button and wait for the page to find your desired statistics. </p>
+         <p class="bold">Example:</p>
+         <ul class="bold">
+            <li>Insert "shroud" into the first player textbox.</li>
+            <li>Select "North America" as that players region.</li>
+            <li>Insert "lyxrN" into the second player textbox.</li>
+            <li>Select "Europe" as that players region.</li>
+            <li>Select February as the month.</li>
+            <li>Use the "Compare" button to view the comparison.</li>
+         </ul>
+         <p>*Player names are CASE SENSITIVE.</p>
+         <p>**PUBG stats are based on seasons. Each month is equivalent to a season.</p>
       </div>
-      
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-  </body>
+      <!-- Optional JavaScript -->
+      <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+   </body>
 </html>

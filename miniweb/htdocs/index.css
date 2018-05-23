@@ -1,154 +1,134 @@
 @import url('https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css');
-
-body {
-    background-image: url(images/pubgbg.png);
-    background-size: cover;
-    background-repeat: no-repeat;
+ body {
+     background-image: url(images/pubgbg.png);
+     background-size: cover;
+     background-repeat: no-repeat;
 }
-
-.nav {
-    width: 60px;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    display: inline-block;
-    position: absolute;
-    background: #f7cb51;
+ .nav {
+     width: 60px;
+     top: 0;
+     left: 0;
+     right: 0;
+     bottom: 0;
+     display: inline-block;
+     position: absolute;
+     background: #f7cb51;
 }
-
-.nav li {
-    cursor: pointer;
-    width: 60px;
-    height: 60px;
-    line-height: 60px;
-    font-size: 18px;
-    color: #ffffff;
+ .nav li {
+     cursor: pointer;
+     width: 60px;
+     height: 60px;
+     line-height: 60px;
+     font-size: 18px;
+     color: #ffffff;
 }
-
-.nav li div,
-.nav li i {
-  position: absolute;
-  text-align: center;
-  animation-duration: 0.34s;
+ .nav li div, .nav li i {
+     position: absolute;
+     text-align: center;
+     animation-duration: 0.34s;
 }
-.nav li div {
-  margin-left: 40px;
-  text-align: center;
-  width: 160px;    
+ .nav li div {
+     margin-left: 40px;
+     text-align: center;
+     width: 160px;
 }
-.nav li i {
-  font-size: 2em;
-  line-height: 60px;
-  width: 60px;
-  z-index: 9;
-  background: #f7cb51;
+ .nav li i {
+     font-size: 2em;
+     line-height: 60px;
+     width: 60px;
+     z-index: 9;
+     background: #f7cb51;
 }
-.nav li div {
-  display: none;
-  z-index: 1;
-  background: #f7cb51;
+ .nav li div {
+     display: none;
+     z-index: 1;
+     background: #f7cb51;
 }
-
-.nav li:hover > div {
-  display: inline-block;
+ .nav li:hover > div {
+     display: inline-block;
 }
-.nav li:hover i {
-  background: #f7cb51;
+ .nav li:hover i {
+     background: #f7cb51;
 }
-
-.pubgIcon {
-    background: url('images/vectorlogo.png');
-    height: 30px;
-    width: 50px;
-    bottom: 15px;
-    left: 5px;
-    position: absolute;
+ .pubgIcon {
+     background: url('images/vectorlogo.png');
+     height: 30px;
+     width: 50px;
+     bottom: 15px;
+     left: 5px;
+     position: absolute;
 }
-
-#pubglogo {
-    margin-top: 10%;
-    width: 20%;
-    height: 20%;
+ #pubglogo {
+     margin-top: 10%;
+     width: 20%;
+     height: 20%;
 }
-
-.center {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+ .center {
+     display: block;
+     margin-left: auto;
+     margin-right: auto;
 }
-
-input[type=text] {
-    width: 385px;
-    outline: 0 none;
-    text-indent: 5px;
+ input[type=text] {
+     width: 385px;
+     outline: 0 none;
+     text-indent: 5px;
 }
-
-.text-center {
-    margin: auto;
-    margin-top: 10px;
-    width: 780px;
+ .text-center {
+     margin: auto;
+     margin-top: 10px;
+     width: 780px;
 }
-
-#search1 {
-    float: left;
+ #search1 {
+     float: left;
 }
-
-#search2 {
-    float: right;
+ #search2 {
+     float: right;
 }
-
-#region1 {
-    float: left;
-    width: 200px;
+ #region1 {
+     float: left;
+     width: 200px;
 }
-
-#region2 {
-    float: left;
-    width: 200px;
+ #region2 {
+     float: left;
+     width: 200px;
 }
-
-#seasonSelector {
-    width: 200px;
-    margin-top: 90px;
-    top: 50%;
-    left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%, -50%);
+ #seasonSelector {
+     width: 200px;
+     margin-top: 90px;
+     top: 50%;
+     left: 50%;
+     margin-right: -50%;
+     transform: translate(-50%, -50%);
 }
-
-.button {
-  border-radius: 20px;
-  background-color: #f6c02a;
-  border: 5px double orange;
-  color: #FFFFFF;
-  text-align: center;
-  font-size: 28px;
-  padding: 20px;
-  width: 400px;
-  transition: all 0.5s;
-  cursor: pointer;
-  margin-top: 100px;
+ .button {
+     border-radius: 20px;
+     background-color: #f6c02a;
+     border: 5px double orange;
+     color: #FFFFFF;
+     text-align: center;
+     font-size: 28px;
+     padding: 20px;
+     width: 400px;
+     transition: all 0.5s;
+     cursor: pointer;
+     margin-top: 100px;
 }
-
-.button:hover {
-    background-color: orange;
+ .button:hover {
+     background-color: orange;
 }
-
-.custom-dropdown {
-    position: relative;
+ .custom-dropdown {
+     position: relative;
 }
-
-.custom-dropdown select {
-    float: left;
-    background-color: #f6c02a;
-    color: #fff;
-    font-size: inherit;	
-    border: 0;
-    margin: 0;
-    width: 385px;
-    height: 30px;
-    text-indent: 5px;
-    text-overflow: '';
+ .custom-dropdown select {
+     float: left;
+     background-color: #f6c02a;
+     color: #fff;
+     font-size: inherit;
+     border: 0;
+     margin: 0;
+     width: 385px;
+     height: 30px;
+     text-indent: 5px;
+     text-overflow: '';
 }
-
+ 
